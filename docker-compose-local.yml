@@ -50,6 +50,7 @@ services:
     image: dev/mantisagent
     ports:
       - "5051:5051"
+      - "7150-7400:7150-7400"
     privileged: true
     command:
       mesos-slave \
@@ -75,7 +76,7 @@ services:
       - "7101:7101"
       - "5006:5006"
     environment:
-      JAVA_OPTS: "-Dmantis.zookeeper.connectString=zookeeper:2181 -Dmantissapi.master.host=mantismaster -Dmantisapi.master.ip=172.16.186.5 -Dmantisapi.master.port=8100"
+      JAVA_OPTS: "-Dmantis.zookeeper.connectString=zookeeper:2181 -Dmantisapi.master.host=mantismaster -Dmantisapi.master.ip=172.16.186.5 -Dmantisapi.master.port=8100"
       NETFLIX_ENVIRONMENT: test
       NETFLIX_ACCOUNT: test
       NETFLIX_STACK: desktop
@@ -86,25 +87,25 @@ services:
         ipv4_address: 172.16.186.7
 
    #
-  mantispublishweb:
-    image: dev/mantispublishweb
-    ports:
-      - "80:8080"
-    depends_on:
-      - mantisapi
-    networks:
-      mantis_net:
-        ipv4_address: 172.16.186.8
+  #mantispublishweb:
+  #  image: dev/mantispublishweb
+  #  ports:
+  #    - "80:8080"
+  #  depends_on:
+  #    - mantisapi
+  #  networks:
+  #    mantis_net:
+  #      ipv4_address: 172.16.186.8
 
-  mantispublish:
-    image: dev/mantispublish
-    ports:
-      - "81:8180"
-    depends_on:
-      - mantisapi
-    networks:
-      mantis_net:
-        ipv4_address: 172.16.186.9
+  #mantispublish:
+  #  image: dev/mantispublish
+  #  ports:
+  #    - "81:8180"
+  #  depends_on:
+  #    - mantisapi
+  #  networks:
+  #    mantis_net:
+  #      ipv4_address: 172.16.186.9
 
 networks:
   mantis_net:
