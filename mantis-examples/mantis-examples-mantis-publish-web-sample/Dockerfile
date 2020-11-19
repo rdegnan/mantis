@@ -2,7 +2,7 @@ FROM tomcat:9.0-alpine
 
 LABEL maintainer="mantis-oss-dev@netflix.com"
 
-ADD build/libs/mantis-examples-mantis-publish-web-sample-1.4.0-SNAPSHOT.war /usr/local/tomcat/webapps/
+ADD build/libs/mantis-examples-mantis-publish-web-sample-2.0.0-SNAPSHOT.war /usr/local/tomcat/webapps/
 
 EXPOSE 8080
 

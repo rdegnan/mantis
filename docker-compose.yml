@@ -75,7 +75,7 @@ services:
       - "7101:7101"
       - "5006:5006"
     environment:
-      JAVA_OPTS: "-Dmantis.zookeeper.connectString=zookeeper:2181 -Dmantissapi.master.host=mantismaster -Dmantisapi.master.ip=172.16.186.5 -Dmantisapi.master.port=8100"
+      JAVA_OPTS: "-Dmantis.zookeeper.connectString=zookeeper:2181 -Dmantisapi.master.host=mantismaster -Dmantisapi.master.ip=172.16.186.5 -Dmantisapi.master.port=8100"
       NETFLIX_ENVIRONMENT: test
       NETFLIX_ACCOUNT: test
       NETFLIX_STACK: desktop

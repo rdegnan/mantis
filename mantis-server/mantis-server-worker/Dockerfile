@@ -32,4 +32,4 @@ RUN apt-get install -y zulu-8
 ENV EC2_VPC_ID="FakeVpc"
 
 # Present a ENI ResourceSet to the mesos. We expect the executor to handle this in test mode.
-CMD ["mesos-slave", "--master=zk://127.0.0.1:2181/mesos", "--work_dir=/apps/mesos-agent", "--log_dir=/var/log/mesos/", "--logging_level=INFO", "--hostname=localmantisagent", "--attributes=region:laptop;asg:mantisagent-laptop-v001;stack:laptop;zone:laptopd;itype:macbook.pro;cluster:mantisagent-laptop;id:l-deadbeef;res:ResourceSet-ENIs-7-29"]
+CMD ["mesos-slave", "--master=zk://zookeeper:2181/mesos", "--work_dir=/apps/mesos-agent", "--log_dir=/var/log/mesos/", "--logging_level=INFO", "--hostname=localmantisagent", "--attributes=region:laptop;asg:mantisagent-laptop-v001;stack:laptop;zone:laptopd;itype:macbook.pro;cluster:mantisagent-laptop;id:l-deadbeef;res:ResourceSet-ENIs-7-29"]

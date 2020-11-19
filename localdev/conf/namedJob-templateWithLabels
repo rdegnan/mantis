@@ -1,6 +1,6 @@
 {
     "jobDefinition": {
-        "jobJarFileLocation": "file:/mnt/local/mantisWorkerInstall/jobs/sine-function-1.0.zip",
+        "jobJarFileLocation": "file:/mnt/local/mantisWorkerInstall/jobs/mantis-examples-sine-function-2.0.0-SNAPSHOT.zip",
         "jobSla": {
             "durationType": "Perpetual",
             "runtimeLimitSecs": 0,
