@@ -25,7 +25,13 @@ ext {
 }
 
 dependencies {
-    api project(path: ':mantis-shaded', configuration: 'shadow')
+    api "com.fasterxml.jackson.core:jackson-annotations:$jacksonVersion"
+    api "com.fasterxml.jackson.core:jackson-core:$jacksonVersion"
+    api "com.fasterxml.jackson.core:jackson-databind:$jacksonVersion"
+    api "com.fasterxml.jackson.datatype:jackson-datatype-jdk8:$jacksonVersion"
+    api "com.fasterxml.jackson.module:jackson-module-afterburner:$jacksonVersion"
+    api "com.fasterxml.jackson.dataformat:jackson-dataformat-cbor:$jacksonVersion"
+
     api "com.netflix:mantis-rxnetty:${rootProject.versionRxNetty}.${rootProject.versionSuffixRxNettyShaded}"
     api "io.reactivex:rxjava:$versionRxJava"
     api "io.netty:netty-codec-http:$nettyVersion"

@@ -26,8 +26,8 @@ import java.util.List;
 import java.util.Map;
 
 import com.mantisrx.common.utils.MantisSourceJobConstants;
-import io.mantisrx.shaded.com.fasterxml.jackson.core.JsonProcessingException;
-import io.mantisrx.shaded.com.fasterxml.jackson.databind.ObjectMapper;
+import com.fasterxml.jackson.core.JsonProcessingException;
+import com.fasterxml.jackson.databind.ObjectMapper;
 import org.junit.jupiter.api.Test;
 import rx.functions.Func1;
 

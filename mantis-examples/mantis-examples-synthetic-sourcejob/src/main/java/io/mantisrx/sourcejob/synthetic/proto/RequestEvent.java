@@ -21,9 +21,9 @@ import java.util.HashMap;
 import java.util.Map;
 
 import io.mantisrx.common.codec.Codec;
-import io.mantisrx.shaded.com.fasterxml.jackson.core.JsonProcessingException;
-import io.mantisrx.shaded.com.fasterxml.jackson.databind.ObjectMapper;
-import io.mantisrx.shaded.com.fasterxml.jackson.databind.ObjectReader;
+import com.fasterxml.jackson.core.JsonProcessingException;
+import com.fasterxml.jackson.databind.ObjectMapper;
+import com.fasterxml.jackson.databind.ObjectReader;
 import lombok.Builder;
 import lombok.Data;
 

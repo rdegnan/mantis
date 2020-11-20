@@ -19,7 +19,6 @@ ext {
 }
 
 dependencies {
-    implementation project(":mantis-shaded")
     implementation project(":mantis-runtime")
 
     api project(":mantis-control-plane:mantis-control-plane-core")

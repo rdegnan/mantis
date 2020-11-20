@@ -67,8 +67,8 @@ public class MantisSourceJobConnector {
     public MantisSourceJobConnector() {
         props = new Properties();
 
-        final String defaultZkConnect = "127.0.0.1:2181";
-        final String defaultZkRoot = "/mantis/master";
+        final String defaultZkConnect = "zookeeper:2181";
+        final String defaultZkRoot = "/mantis/master/nmahilani";
         final String defaultZkLeaderPath = "/leader";
 
         String connectString;

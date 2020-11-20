@@ -33,7 +33,7 @@ import io.mantisrx.runtime.parameter.ParameterDefinition;
 import io.mantisrx.runtime.parameter.type.IntParameter;
 import io.mantisrx.runtime.parameter.type.StringParameter;
 import io.mantisrx.runtime.parameter.validator.Validators;
-import io.mantisrx.shaded.com.google.common.collect.Lists;
+import com.google.common.collect.Lists;
 import io.mantisrx.sourcejob.kafka.core.TaggedData;
 import io.mantisrx.sourcejob.kafka.core.utils.JsonUtility;
 import org.slf4j.Logger;

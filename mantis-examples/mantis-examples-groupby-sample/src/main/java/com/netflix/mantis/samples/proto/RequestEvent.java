@@ -18,8 +18,8 @@ package com.netflix.mantis.samples.proto;
 import java.io.IOException;
 
 import io.mantisrx.common.codec.Codec;
-import io.mantisrx.shaded.com.fasterxml.jackson.databind.ObjectMapper;
-import io.mantisrx.shaded.com.fasterxml.jackson.databind.ObjectReader;
+import com.fasterxml.jackson.databind.ObjectMapper;
+import com.fasterxml.jackson.databind.ObjectReader;
 import lombok.Builder;
 import lombok.Data;
 

@@ -28,7 +28,7 @@ import io.mantisrx.common.metrics.spectator.MetricGroupId;
 import io.mantisrx.connector.publish.core.QueryRegistry;
 import io.mantisrx.publish.proto.MantisServerSubscription;
 import io.mantisrx.publish.proto.MantisServerSubscriptionEnvelope;
-import io.mantisrx.shaded.com.fasterxml.jackson.databind.ObjectMapper;
+import com.fasterxml.jackson.databind.ObjectMapper;
 import io.netty.buffer.ByteBuf;
 import io.netty.buffer.Unpooled;
 import io.netty.channel.ChannelFutureListener;

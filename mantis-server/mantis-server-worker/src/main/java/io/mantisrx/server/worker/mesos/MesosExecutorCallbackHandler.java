@@ -20,8 +20,8 @@ import java.io.IOException;
 import java.util.List;
 import java.util.concurrent.TimeUnit;
 
-import io.mantisrx.shaded.com.fasterxml.jackson.databind.DeserializationFeature;
-import io.mantisrx.shaded.com.fasterxml.jackson.databind.ObjectMapper;
+import com.fasterxml.jackson.databind.DeserializationFeature;
+import com.fasterxml.jackson.databind.ObjectMapper;
 import io.mantisrx.server.core.ExecuteStageRequest;
 import io.mantisrx.server.worker.WrappedExecuteStageRequest;
 import org.apache.mesos.Executor;
@@ -93,6 +93,7 @@ public class MesosExecutorCallbackHandler implements Executor {
     private WrappedExecuteStageRequest createExecuteStageRequest(TaskInfo task) {
         // TODO
         try {
+            logger.error("onError called for request failure handler");
             return new WrappedExecuteStageRequest(
                     PublishSubject.<Boolean>create(),
                     mapper.readValue(task.getData().toByteArray(), ExecuteStageRequest.class));

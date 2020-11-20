@@ -14,8 +14,14 @@
  * limitations under the License.
  */
 
+ext {
+    jacksonVersion = '2.10.+'
+}
+
 dependencies {
-    api project(path: ':mantis-shaded', configuration: 'shadow')
+    api "com.fasterxml.jackson.core:jackson-annotations:$jacksonVersion"
+    api "com.fasterxml.jackson.core:jackson-core:$jacksonVersion"
+    api "com.fasterxml.jackson.core:jackson-databind:$jacksonVersion"
 
     testImplementation "junit:junit-dep:$junitVersion"
     testImplementation "org.mockito:mockito-core:$mockitoVersion"

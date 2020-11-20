@@ -18,8 +18,8 @@ package io.mantisrx.connector.kafka.source.serde;
 
 import java.util.Map;
 
-import io.mantisrx.shaded.com.fasterxml.jackson.core.type.TypeReference;
-import io.mantisrx.shaded.com.fasterxml.jackson.databind.ObjectMapper;
+import com.fasterxml.jackson.core.type.TypeReference;
+import com.fasterxml.jackson.databind.ObjectMapper;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 

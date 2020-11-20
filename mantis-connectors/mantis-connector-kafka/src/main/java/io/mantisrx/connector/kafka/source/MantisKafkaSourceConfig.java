@@ -27,7 +27,7 @@ import io.mantisrx.connector.kafka.source.checkpoint.strategy.CheckpointStrategy
 import io.mantisrx.connector.kafka.source.serde.ParserType;
 import io.mantisrx.runtime.Context;
 import io.mantisrx.runtime.parameter.Parameters;
-import io.mantisrx.shaded.com.google.common.base.Splitter;
+import com.google.common.base.Splitter;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
